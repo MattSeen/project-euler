@@ -8,3 +8,4 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 # Research
 
+http://www.mathblog.dk/project-euler-problem-2/
