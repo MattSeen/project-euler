@@ -8,4 +8,11 @@ What is the largest prime factor of the number 600851475143 ?
 
 Main elements of the question
 
-- Factorizing numbers
+- Factorizing numbers but in particular prime factorization.
+
+http://www.mathsisfun.com/prime-factorization.html
+
+http://en.wikipedia.org/wiki/Prime_factor
+
+https://www.khanacademy.org/math/arithmetic/factors-multiples/prime_factorization/v/prime-factorization
+
