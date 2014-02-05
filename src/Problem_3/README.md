@@ -16,3 +16,4 @@ http://en.wikipedia.org/wiki/Prime_factor
 
 https://www.khanacademy.org/math/arithmetic/factors-multiples/prime_factorization/v/prime-factorization
 
+http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
