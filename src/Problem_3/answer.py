@@ -2,6 +2,9 @@
     Answers.
 '''
 
+def silly_method():
+    return True
+
 def recursive_version(to_crack, i = 2):
     '''
         Recurse
@@ -27,7 +30,7 @@ def while_loop_version(num):
             print str(base_value)
         base_value = base_value + 1
 
-    print num
+    return num
 
 
 def main():
@@ -36,7 +39,7 @@ def main():
     '''
     prime_to_crack = 600851475143
 
-    # while_loop_version(prime_to_crack)
+    # print while_loop_version(prime_to_crack)
     
     print recursive_version(prime_to_crack)
 
