@@ -14,3 +14,14 @@ def test_is_palindromic():
     assert_equals(answer.is_palindromic(-1001), True)
     assert_equals(answer.is_palindromic(1001.98898), False)
 
+def test_get_largest_palindrom():
+    '''
+        Something.
+    '''
+    assert_equals(answer.get_largest_palindrom(2), 9009, "Wrong answer")
+    assert answer.is_palindromic(answer.get_largest_palindrom(2))
+
+    two_digit = answer.get_largest_palindrom(2)
+    three_digit = answer.get_largest_palindrom(3)
+
+    assert_equal(two_digit, three_digit)

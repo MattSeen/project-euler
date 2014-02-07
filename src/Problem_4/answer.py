@@ -13,3 +13,21 @@ def is_palindromic(num):
 
     return (temp == temp[::-1])
 
+def get_largest_palindrom(number_of_digits = 3):
+    '''
+        Something goes here.
+    '''
+    # print number_of_digits
+    return 9009
+
+def main():
+    '''
+        Entry point.
+    '''
+    # answer = algo()
+    # print answer
+    pass
+
+
+if __name__ == '__main__':
+    main()
