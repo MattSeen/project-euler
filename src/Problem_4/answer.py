@@ -8,13 +8,25 @@ def is_palindromic(num):
     '''
         Test if a number is palindromic,
         Essentially a string test... probably a performance bottle neck.
+
+        Alterative mathematical implementation
     '''
-    if(abs(num) < 10):
+    test_value = abs(num)
+
+    if(test_value < 10):
         return True
 
-    temp = str(abs(num))
+    # temp = str(test_value)
+    # return (temp == temp[::-1])
 
-    return (temp == temp[::-1])
+    num = test_value
+    reverse = 0
+    while num > 0:
+        remainder = num % 10
+        reverse = reverse * 10 + remainder
+        num = num / 10
+    return (test_value == reverse)
+
 
 def get_largest_palindrom(range_start, range_end):
     '''
@@ -34,6 +46,7 @@ def get_largest_palindrom(range_start, range_end):
                     largest_num = num
 
     return largest_num
+
 
 def main():
     '''
