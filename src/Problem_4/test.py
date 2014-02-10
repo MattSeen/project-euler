@@ -1,6 +1,10 @@
+'''
+    Test are a series of tests for my answer to problem 4 of the project euler
+    website.
+'''
+
 from nose.tools import assert_equals
 import answer
-
 
 def test_is_palindromic():
     '''
@@ -16,12 +20,16 @@ def test_is_palindromic():
 
 def test_get_largest_palindrom():
     '''
-        Something.
+        My function to get the largest palindrom is quite restrictive and only 
+        takes two digits.
+        Ensure the output of this is at least correct.
     '''
-    assert_equals(answer.get_largest_palindrom(2), 9009, "Wrong answer")
-    assert answer.is_palindromic(answer.get_largest_palindrom(2))
+    assert_equals(answer.get_largest_palindrom(100, 99), -1)
+    
+    assert_equals(answer.get_largest_palindrom(1, 100), 9009)
+    assert answer.is_palindromic(answer.get_largest_palindrom(1, 100))
 
-    two_digit = answer.get_largest_palindrom(2)
-    three_digit = answer.get_largest_palindrom(3)
+    two_digit = answer.get_largest_palindrom(10, 100)
+    three_digit = answer.get_largest_palindrom(100, 1000)
 
-    assert_equal(two_digit, three_digit)
+    assert two_digit != three_digit
